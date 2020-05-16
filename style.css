@@ -13,7 +13,7 @@ aside {
     display: flex;
     flex-direction: column;
    
-    background-color: aqua;
+    background-color: rgb(102, 107, 107);
   }
 button {
     cursor: pointer;
@@ -28,9 +28,13 @@ button {
     color: aliceblue;
     width: max-content;
   }
+  button.total{
+    background-image: linear-gradient(to right, rgb(128, 0, 32), rgb(128, 0, 79), rgb(61, 3, 42));
+  }
   .main{
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      
   }
   .person{
       display: flex;
@@ -38,8 +42,11 @@ button {
       border: 3px solid black;
       border-radius: 10px;
       padding: 8px;
-      margin: 0 15px;
+      margin: 15px 15px;
   }
   .person img{
       border-radius: 50%;
+  }
+  .person.supervisor{
+    border:3xp double rgb(66, 189, 66);
   }
