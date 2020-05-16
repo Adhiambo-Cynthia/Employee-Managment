@@ -35,9 +35,16 @@ employees=[]
      main.innerHTML=''
      dataProvided.forEach(employee=>{
          const element=document.createElement('div')
-         element.classList.add('person')
-         if(employee.salary > 150000){
+         
+        if(employee.salary > 150000){
+            console.log(employee)
             element.classList.add('person','supervisor')
+            const badge=document.createElement('p')
+            badge.innerHTML="&#127775"
+            element.appendChild(badge)
+        }
+        else{
+            element.classList.add('person')
         }
          element.innerHTML=`
          <img src=${employee.pic} alt="profile">

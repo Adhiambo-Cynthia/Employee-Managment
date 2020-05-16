@@ -47,6 +47,10 @@ button {
   .person img{
       border-radius: 50%;
   }
-  .person.supervisor{
-    border:3xp double rgb(66, 189, 66);
+  .supervisor{
+    border:3px double rgb(66, 189, 66);
+  }
+  .badge{
+  width: 50px;
+  height: 30px;
   }
